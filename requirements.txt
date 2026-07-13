@@ -1,0 +1,7 @@
+slack-bolt>=1.18
+slack_sdk>=3.27
+openai>=1.30
+python-dotenv>=1.0
+requests>=2.31
+mcp>=1.0
+pytest>=8.0

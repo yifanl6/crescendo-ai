@@ -1,0 +1,37 @@
+display_information:
+  name: Crescendo AI
+  description: Proactive executive board assistant for music clubs & nonprofits
+  background_color: "#4a154b"
+oauth_config:
+  scopes:
+    bot:
+      - chat:write
+      - im:write
+      - im:history
+      - channels:history
+      - groups:history
+      - files:read
+      - commands
+      - users:read
+settings:
+  socket_mode_enabled: true
+  event_subscriptions:
+    bot_events:
+      - message.channels
+      - message.groups
+      - file_shared
+  interactivity:
+    is_enabled: true
+features:
+  bot_user:
+    display_name: Crescendo AI
+    always_online: true
+  slash_commands:
+    - command: /crescendo-ask
+      description: Ask Crescendo AI about past meetings and decisions
+      usage_hint: "have we booked the recital hall before?"
+      should_escape: false
+    - command: /crescendo-music
+      description: Get music advisor recommendations (repertoire, grants, festivals)
+      usage_hint: "[optional topic]"
+      should_escape: false
